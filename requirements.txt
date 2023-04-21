@@ -1,0 +1,6 @@
+hdbscan==0.8.29
+mteb==1.0.1
+numba==0.56.4
+river==0.14.0
+sentence-transformers==2.2.2
+umap-learn==0.5.3
