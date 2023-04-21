@@ -1,4 +1,4 @@
-# Text Embedding Clustering Benchmark for German (cteb-de)
+# German Text Embedding Clustering Benchmark (tecb-de)
 
 This repository contains code to evaluate language models for clustering word embeddings as used in neural topic modelling (see for example [BERTopic](https://github.com/MaartenGr/BERTopic)) specifically for <b>German</b>. This work builds on [Massive Text Embedding Benchmark (MTEB)](https://github.com/embeddings-benchmark/mteb), which provides benchmark datasets and results for a wide range of tasks.
 
