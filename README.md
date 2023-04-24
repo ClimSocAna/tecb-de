@@ -26,9 +26,9 @@ Currently, we provide 4 datasets. The datasets are built similarly to the Englis
 | **Model** | **BlurbsClusteringS2S** | **BlurbsClusteringP2P** | **TenKGNADClusteringS2S** | **TenKGNADClusteringP2P** | **AVG**
 |----|-------:|-------:|-------:|-------:|-------:|
 | [deepset/gbert-base](https://huggingface.co/deepset/gbert-base) | 11.27 | 35.36 | 24.23 | 37.16 | 27.01 |
-| [deepset/gbert-large](https://huggingface.co/deepset/gbert-large) | 13.34 | 39.30 | 34.97 | 41.69 | 32.33 |
+| [deepset/gbert-large](https://huggingface.co/deepset/gbert-large) | 13.34 | **39.30** | **34.97** | **41.69** | **32.33** |
 | [T-Systems-onsite/cross-en-de-roberta-sentence-transformer](https://huggingface.co/T-Systems-onsite/cross-en-de-roberta-sentence-transformer) | 12.69 | 30.81 | 10.94 | 23.5 | 19.49 |
-| [sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2) | 14.33 | 32.46 | 22.26 | 36.13 | 26.30 |
+| [sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2) | **14.33** | 32.46 | 22.26 | 36.13 | 26.30 |
 
 ### additional clustering algorithms 
 tbd
