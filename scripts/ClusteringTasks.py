@@ -151,3 +151,54 @@ class TenKGnadClusteringP2P(AbsTaskFlexibleClustering):
             "eval_langs": ["de"],
             "main_score": ["v_measure"],
         }
+
+
+reddit_data_path = os.path.join(Path(__file__).parent.parent.absolute(), "reddit_data")
+
+
+class RedditClusteringS2S(AbsTaskFlexibleClustering):
+    @dynamic_description
+    def description(self) -> dict:
+        return {
+            "name": "RedditClusteringS2S",
+            "description": "Clustering of German reddit submission titles.",
+            "type": "Clustering",
+            "category": "s2s",
+            "eval_splits": ["test"],
+            "eval_langs": ["de"],
+            "main_score": ["v_measure"],
+        }
+
+    def load_data(self, **kwargs):
+        if self.data_loaded:
+            return
+
+        self.dataset = datasets.load_dataset(
+            reddit_data_path,
+            data_files={"test": "s2s_test.jsonl"},
+        )
+        self.data_loaded = True
+
+
+class RedditClusteringP2P(AbsTaskFlexibleClustering):
+    @dynamic_description
+    def description(self) -> dict:
+        return {
+            "name": "RedditClusteringP2P",
+            "description": "Clustering of German reddit submission (titles + body).",
+            "type": "Clustering",
+            "category": "p2p",
+            "eval_splits": ["test"],
+            "eval_langs": ["de"],
+            "main_score": ["v_measure"],
+        }
+
+    def load_data(self, **kwargs):
+        if self.data_loaded:
+            return
+
+        self.dataset = datasets.load_dataset(
+            reddit_data_path,
+            data_files={"test": "p2p_test.jsonl"},
+        )
+        self.data_loaded = True

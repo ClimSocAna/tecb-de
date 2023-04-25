@@ -1,3 +1,4 @@
+import argparse
 import logging
 
 from ClusteringTasks import (
@@ -44,9 +45,21 @@ model_names = [
     "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
 ]
 
-for model_name in model_names:
-    model = SentenceTransformer(model_name)
-    evaluation = MTEB(
-        tasks=[task(**config) for task in base_tasks for config in task_configs]
-    )
-    evaluation.run(model, output_folder=f"results/{model_name.split('/')[-1]}")
+
+def main(args: argparse.ArugmentParser):
+    if args.include_reddit:
+        base_tasks.extend([RedditClusteringS2S, RedditClusteringP2P])
+    for model_name in model_names:
+        model = SentenceTransformer(model_name)
+        evaluation = MTEB(
+            tasks=[task(**config) for task in base_tasks for config in task_configs]
+        )
+        evaluation.run(model, output_folder=f"results/{model_name.split('/')[-1]}")
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--include-reddit", action="store_true")
+
+    args = parser.parse_args()
+    main(args)
