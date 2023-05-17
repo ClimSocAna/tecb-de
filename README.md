@@ -115,3 +115,6 @@ Finally, you can can run the evaluation using the `--include-reddit` flag
 python scripts/run_cteb_de.py --reddit-flag
 ```
 
+### Adaptive pre-training
+If you want to experiment with adaptive pre-training, you can have a look at `scripts/run_fine_tuned_cteb_de.py`. Basically, it allows you to train models using whole word masking (WWM) and [TSDAE](https://arxiv.org/abs/2104.06979) and to evaluate on a clustering algorithm during training.
+
