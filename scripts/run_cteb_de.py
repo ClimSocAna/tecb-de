@@ -21,6 +21,7 @@ base_tasks = [
     TenKGnadClusteringP2P,
 ]
 
+# change task config here
 task_configs = [
     {"dim_red": None, "clustering_alg": "minibatch_kmeans"},
     {"dim_red": "pca", "clustering_alg": "minibatch_kmeans"},
@@ -38,11 +39,12 @@ task_configs = [
     {"dim_red": "pca+umap", "clustering_alg": "dbstream"},
 ]
 
+# change models here
 model_names = [
     "deepset/gbert-base",
     "deepset/gbert-large",
-    "T-Systems-onsite/cross-en-de-roberta-sentence-transformer",
     "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "sentence-transformers/sentence-t5-xxl",
 ]
 
 

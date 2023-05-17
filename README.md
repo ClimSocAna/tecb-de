@@ -38,9 +38,17 @@ All results show the [V-measure](https://scikit-learn.org/stable/modules/cluster
 | **Model** | **BlurbsClusteringS2S** | **BlurbsClusteringP2P** | **TenKGNADClusteringS2S** | **TenKGNADClusteringP2P** | **RedditClusteringS2S** | **RedditClusteringP2P** | **AVG**|
 |----|-------:|-------:|-------:|-------:|-------:|-------:|-------:|
 | [deepset/gbert-base](https://huggingface.co/deepset/gbert-base) | 11.27 | 35.36 | 24.23 | 37.16 | 28.57 | 35.30 | 28.66 |
-| [deepset/gbert-large](https://huggingface.co/deepset/gbert-large) | 13.34 | **39.30** | **34.97** | **41.69** | **34.35** | **44.61** | **34.71** |
+| [deepset/gbert-large](https://huggingface.co/deepset/gbert-large) | 13.34 | 39.30 | **34.97** | 41.69 | 34.35 | 44.61 | 34.71 |
+| [deepset/gelectra-base](https://huggingface.co/deepset/gelectra-base) | 7.74 | 10.06 | 4.11 | 9.02 | 6.59 | 7.73 | 7.54 |
+| [deepset/gelectra-large](https://huggingface.co/deepset/gelectra-large) |7.57 | 13.96 | 3.91 | 11.49 | 7.59 | 10.54 | 9.18 |
+| [uklfr/gottbert-base](https://huggingface.co/uklfr/gottbert-base) |8.37 |  34.49 | 9.34 | 33.66 | 16.07 | 19.46 | 20.23 |
+| [sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2) | 14.33 | 32.46 | 22.26 | 36.13 |33.33 | 44.59 | 30.52 |
+| [sentence-transformers/paraphrase-multilingual-mpnet-base-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2) |15.81 | 34.38 | 22.00 | 35.96 | 36.39 | 48.43 | 32.16 |
 | [T-Systems-onsite/cross-en-de-roberta-sentence-transformer](https://huggingface.co/T-Systems-onsite/cross-en-de-roberta-sentence-transformer) | 12.69 | 30.81 | 10.94 | 23.50 | 27.98 | 33.01 | 23.16 |
-| [sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2) | **14.33** | 32.46 | 22.26 | 36.13 |33.33 | 44.59 | 30.52 |
+| [sentence-transformers/use-cmlm-multilingual](https://huggingface.co/sentence-transformers/use-cmlm-multilingual) |15.24 | 29.63 | 25.64 | 37.10 | 33.62 | 49.70 | 31.82 |
+| [sentence-transformers/sentence-t5-base](https://huggingface.co/sentence-transformers/sentence-t5-base) |11.57 | 30.59 | 18.11 | **44.88** |  31.99 | 45.80|  30.49 |
+| [sentence-transformers/sentence-t5-xxl](https://huggingface.co/sentence-transformers/sentence-t5-xxl) | **15.94** | **39.91** | 19.69 | 43.43 | **38.54** | **55.90** | **35.57** |
+| [xlm-roberta-large](https://huggingface.co/xlm-roberta-large) |7.29 | 29.84 | 6.16 | 32.46 | 10.19 | 23.50 | 18.24 |
 
 ### additional clustering algorithms 
 In addition to [k-means](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html), we evaluate the following different clustering algorithms:
@@ -81,7 +89,7 @@ pip install -r requirements.txt
 
 ## Usage
 ### Running the evaluation
-Simply run `python scripts/run_cteb_de.py`. This will produce an `results` folder.
+Simply run `python scripts/run_cteb_de.py`. This will produce an `results` folder. You can modify the script to run the evaluation for models and clustering algorithms (and configuration) of your choosing.
 
 ### Including the Reddit dataset
 If you want to use the reddit dataset, you first have to download the data
