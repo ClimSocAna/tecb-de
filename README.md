@@ -61,7 +61,7 @@ Inspired by [BERTopic](https://github.com/MaartenGr/BERTopic), we also evaluate 
 *If you want add/evaluate more algorithms, please have a look at [FlexibleClusteringEvaluator.py](https://github.com/ClimSocAna/tecb-de/blob/main/scripts/FlexibleClusteringEvaluator.py) on how to achieve that.*
 
 
-### UMAP + {k-means, HDBSCAN, DBTSTREAM}
+### UMAP + {k-means, HDBSCAN, DBSTREAM}
 *For all results have a look at [results/tecb-de-full-results.csv](https://github.com/ClimSocAna/tecb-de/blob/3364f94faba7b235c7498a2bb724324064ac4537/results/tecb-de-full-results.csv).*
  
 | **Model**  | **Algorithm**                    | **BlurbsClusteringS2S** | **BlurbsClusteringP2P** | **10KGNADClusteringS2S** | **10KGNADClusteringP2P** | **RedditClusteringS2S** | **RedditClusteringP2P** | **AVG** |
