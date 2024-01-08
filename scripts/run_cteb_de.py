@@ -48,7 +48,7 @@ model_names = [
 ]
 
 
-def main(args: argparse.ArugmentParser):
+def main(args: argparse.ArgumentParser):
     if args.include_reddit:
         base_tasks.extend([RedditClusteringS2S, RedditClusteringP2P])
     for model_name in model_names:
