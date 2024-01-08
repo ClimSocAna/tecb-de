@@ -1,6 +1,6 @@
 # German Text Embedding Clustering Benchmark
 
-Shortcut: [Datasets](https://github.com/ClimSocAna/tecb-de#datasets) - [Results](https://github.com/ClimSocAna/tecb-de#results) - [Insallation](https://github.com/ClimSocAna/tecb-de#installation) - [Usage](https://github.com/ClimSocAna/tecb-de#usage)
+Shortcut: [Datasets](https://github.com/ClimSocAna/tecb-de#datasets) - [Results](https://github.com/ClimSocAna/tecb-de#results) - [Insallation](https://github.com/ClimSocAna/tecb-de#installation) - [Usage](https://github.com/ClimSocAna/tecb-de#usage) - [Citation](https://github.com/ClimSocAna/tecb-de#citation)
 
 ## Remarks
 This repository contains code to evaluate language models for clustering word embeddings as used in neural topic modelling (see for example [BERTopic](https://github.com/MaartenGr/BERTopic)) specifically for <b>German</b>. This work builds on [Massive Text Embedding Benchmark (MTEB)](https://github.com/embeddings-benchmark/mteb), which provides benchmark datasets and results for a wide range of tasks.
@@ -119,4 +119,18 @@ python scripts/run_cteb_de.py --reddit-flag
 
 ### Adaptive pre-training
 If you want to experiment with adaptive pre-training, you can have a look at `scripts/run_fine_tuned_cteb_de.py`. Basically, it allows you to train models using whole word masking (WWM) and [TSDAE](https://arxiv.org/abs/2104.06979) and to evaluate on a clustering algorithm during training.
+
+## Citation
+If you make use of this work, please cite:
+```
+@article{wehrli2024tecbde,
+  doi={10.48550/arXiv.2401.02709},
+  url={https://arxiv.org/abs/2401.02709},
+  title={German Text Embedding Clustering Benchmark}, 
+  author={Silvan Wehrli and Bert Arnrich and Christopher Irrgang},
+  publisher={arXiv},
+  journal={arXiv preprint arXiv:2401.02709}
+  year={2024}
+}
+```
 
