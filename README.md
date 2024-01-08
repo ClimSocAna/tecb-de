@@ -1,6 +1,6 @@
 # German Text Embedding Clustering Benchmark
 
-Shortcut: [Datasets](https://github.com/ClimSocAna/tecb-de#datasets) - [Results](https://github.com/ClimSocAna/tecb-de#results) - [Insallation](https://github.com/ClimSocAna/tecb-de#installation) - [Usage](https://github.com/ClimSocAna/tecb-de#usage) - [Citation](https://github.com/ClimSocAna/tecb-de#citation)
+Shortcut: [Datasets](https://github.com/ClimSocAna/tecb-de#datasets) - [Results](https://github.com/ClimSocAna/tecb-de#results) - [Installation](https://github.com/ClimSocAna/tecb-de#installation) - [Usage](https://github.com/ClimSocAna/tecb-de#usage) - [Citation](https://github.com/ClimSocAna/tecb-de#citation)
 
 ## Remarks
 This repository contains code to evaluate language models for clustering word embeddings as used in neural topic modelling (see for example [BERTopic](https://github.com/MaartenGr/BERTopic)) specifically for <b>German</b>. This work builds on [Massive Text Embedding Benchmark (MTEB)](https://github.com/embeddings-benchmark/mteb), which provides benchmark datasets and results for a wide range of tasks.
