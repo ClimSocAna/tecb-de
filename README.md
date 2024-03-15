@@ -121,16 +121,24 @@ python scripts/run_cteb_de.py --reddit-flag
 If you want to experiment with adaptive pre-training, you can have a look at `scripts/run_fine_tuned_cteb_de.py`. Basically, it allows you to train models using whole word masking (WWM) and [TSDAE](https://arxiv.org/abs/2104.06979) and to evaluate on a clustering algorithm during training.
 
 ## Citation
-If you make use of this work, please cite:
+If you make use of this [work](https://aclanthology.org/2023.konvens-main.20/), please cite:
 ```
-@article{wehrli2024tecbde,
-  doi={10.48550/arXiv.2401.02709},
-  url={https://arxiv.org/abs/2401.02709},
-  title={German Text Embedding Clustering Benchmark}, 
-  author={Silvan Wehrli and Bert Arnrich and Christopher Irrgang},
-  publisher={arXiv},
-  journal={arXiv preprint arXiv:2401.02709}
-  year={2024}
+@inproceedings{wehrli-etal-2023-german,
+    title = "{G}erman Text Embedding Clustering Benchmark",
+    author = "Wehrli, Silvan  and
+      Arnrich, Bert  and
+      Irrgang, Christopher",
+    editor = "Georges, Munir  and
+      Herygers, Aaricia  and
+      Friedrich, Annemarie  and
+      Roth, Benjamin",
+    booktitle = "Proceedings of the 19th Conference on Natural Language Processing (KONVENS 2023)",
+    month = sep,
+    year = "2023",
+    address = "Ingolstadt, Germany",
+    publisher = "Association for Computational Lingustics",
+    url = "https://aclanthology.org/2023.konvens-main.20",
+    pages = "187--201",
 }
 ```
 
